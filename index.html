@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>我的網頁</h1>
-</body>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>簡歷</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Han+Sans+SC&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Source Han Sans SC', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4c16f;
+        color: #333;
+      }
+      .container {
+        width: 80%;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 50px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        display: flex;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      #div1 {
+        flex: 1;
+      }
+      #div2 {
+        flex: 2;
+      }
+      header img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 4px solid #1b418f; /* 藍色邊框 */
+        margin-bottom: 20px;
+      }
+      header h1 {
+        font-weight: bold;
+        font-size: 36px;
+        color: #1b418f; /* 藍色 */
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 18px;
+        color: #777;
+      }
+      .section {
+        margin-bottom: 30px;
+      }
+      .section h2 {
+        font-size: 24px;
+        color: #1b418f; /* 黃色 */
+        border-bottom: 2px solid #1b418f; /* 黃色邊框 */
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+      .section p,
+      .section ul {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .section li {
+        margin-bottom: 10px;
+      }
+      .experience li,
+      .education li {
+        background: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+      .experience li strong,
+      .education li strong {
+        font-weight: bold;
+        color: #333;
+      }
+      .skills li {
+        display: inline-block;
+        background-color: #08a858; /* 藍色背景 */
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        margin: 5px;
+      }
+      .social-links a {
+        color: #1b418f;
+        text-decoration: none;
+        margin-right: 15px;
+      }
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+      .contact-info p,
+      .social-links p {
+        margin: 5px 0;
+      }
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #888;
+      }
+      footer a {
+        color: #007bff; /* 藍色 */
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="div1">
+          <img src="head.png" alt="張三的頭像" />
+        </div>
+        <div id="div2">
+          <h1  style="font-weight: bolder;">張阿毛</h1>
+          <p style="font-weight: bolder;">軟體開發工程師</p>
+          <p>Email: zhangsan@example.com</p>
+          <p>電話: 123-456-7890</p>
+          <p>地址:台北市，台灣</p>
+        </div>
+      </header>
+
+      <div class="section profile">
+        <h2>個人簡介</h2>
+        <p>
+          我是一位熱愛編程的軟體工程師，擁有多年 web
+          開發經驗，擅長解決複雜的技術問題並且對新技術充滿熱情。對團隊合作有深刻理解，並樂於與跨部門合作完成產品的開發與創新。
+        </p>
+      </div>
+
+      <div class="section experience">
+        <h2>工作經歷</h2>
+        <ul>
+          <li>
+            <strong>公司名稱</strong> - 軟體工程師 (2020 - 現在)
+            <ul>
+              <li>負責開發和維護公司網站的前端和後端系統。</li>
+              <li>使用 React 和 Node.js 完成多個產品的重構和優化。</li>
+              <li>與 UX/UI 設計師合作，改進用戶界面，提高使用體驗。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>另一家公司</strong> - 前端開發工程師 (2018 - 2020)
+            <ul>
+              <li>開發並維護公司電商平台的前端頁面。</li>
+              <li>優化網站的性能和響應速度，提升了用戶體驗。</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section education">
+        <h2>教育背景</h2>
+        <ul>
+          <li><strong>國立台灣大學</strong> - 資訊工程學士 (2014 - 2018)</li>
+        </ul>
+      </div>
+
+      <div class="section skills">
+        <h2>技能</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Vue.js, Angular</li>
+          <li>Node.js, Express</li>
+          <li>Git, GitHub</li>
+          <li>API 設計與開發</li>
+        </ul>
+      </div>
+
+      <div class="section social-links">
+        <h2>社交媒體</h2>
+        <p>
+          <a href="https://www.linkedin.com/in/zhangsan" target="_blank"
+            >LinkedIn</a
+          >
+          |
+          <a href="https://github.com/zhangsan" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>© 2024 張三 - <a href="mailto:zhangsan@example.com">聯繫我</a></p>
+      </footer>
+    </div>
+  </body>
 </html>
